@@ -1,124 +1,95 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilo de fondo y texto */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f6ed;
-    color: #333;
+    background-color: #f0fff0;
+    margin: 0;
+    padding: 0;
 }
 
-/* Encabezado */
-header {
-    background-color: #000baa;
-    color: #fff;
-    padding: 45px;
-    display: block;
-    text-align: center;
-}
-
-header .profile {
-    text-align: center;
-    display: block;
-}
-
-header .profile img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-header nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-header nav a:hover {
-    color: #a3e635;
-}
-
-/* Contenido principal */
-main {
+.header {
+    background-color: #0d10b5;
+    color: white;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
-.content {
+.header img {
+    border-radius: 10%;
+    width: 120px;
+    height: 150px;
+}
+
+.header h1 {
+    margin: 10px 0 5px;
+}
+
+.navbar {
     display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
+    justify-content: center;
+    background-color: black;
+}
+
+.navbar a {
+    color: #d4ff00;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 300px;
+    width: 45%;
+}
+
+.card h2 {
+    background-color: #0d10b5;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
     text-align: center;
+    margin: 0 0 10px;
 }
 
 .card img {
-    width: 100%;
-    border-radius: 8px;
+    width: 50%;
+    border-radius: 10px;
     margin-top: 10px;
 }
 
-/* Sección de certificados */
-.certificates {
-    background-color: #33658a;
-    color: #fff;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 700px;
-    padding: 20px;
+.courses {
     text-align: center;
+    background-color: #0d10b5;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
 }
 
-.certificates .filters,
-.certificates .courses {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.certificates button {
-    background-color: #444;
-    color: #fff;
+.courses button {
+    background-color: #67cdf9;
+    color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
+    margin: 5px;
     cursor: pointer;
 }
 
-.certificates .courses button {
-    background-color: #8b4513;
-}
-
-.certificates button:hover {
-    background-color: #333;
-}
-
-/* Pie de página */
-footer {
-    background-color: #33658a;
-    color: #fff;
+.footer {
+    background-color: #0d10b5;
+    color: white;
     text-align: center;
     padding: 10px;
-    font-size: 0.9em;
     margin-top: 20px;
-}
-
-footer p {
-    margin: 5px 0;
 }
