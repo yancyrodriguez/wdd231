@@ -77,3 +77,5 @@ const courses = [
         completed: false
     }
 ]
+
+const coursesElement = document.querySelector("#courses");
