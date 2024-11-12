@@ -78,4 +78,3 @@ const courses = [
     }
 ]
 
-const coursesElement = document.querySelector("#courses");
