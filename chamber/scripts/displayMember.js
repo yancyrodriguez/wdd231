@@ -14,12 +14,15 @@ async function fetchMemberData() {
         <p>${member.phone}</p>
         <a href="${member.website}" target="_blank">${member.website}</a>
         <img src="images/${member.image}" alt="${member.name} logo">
-    
 
         `;
         membersDiv.append(memberdiv);
     })
-
+    image.setAttribute('src', member.image);
+    image.setAttribute('alt', `Image of ${member.name}`);
+    image.setAttribute('loading', 'lazy');
+    image.setAttribute('width', '250');
+    image.setAttribute('height', '250');
 }
 
 
