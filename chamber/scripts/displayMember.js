@@ -1,5 +1,6 @@
 const membersDiv = document.querySelector("#members");
-
+const grid = document.querySelector('#gridButton');
+const list = document.querySelector('#listButton');
 
 async function fetchMemberData() {
     const response = await fetch('data/members.json');
@@ -13,7 +14,8 @@ async function fetchMemberData() {
         <p>${member.address}</p>
         <p>${member.phone}</p>
         <a href="${member.website}" target="_blank">${member.website}</a>
-        <img src="images/${member.image}" alt="${member.name} logo">
+        <img src="images/${member.image}" alt="${member.name}"width="200" height="auto">
+				</figure>
 
         `;
         membersDiv.append(memberdiv);
